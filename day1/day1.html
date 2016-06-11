@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Day 1</title>
+</head>
+<body>
+
+<h1>Make the rock dance by clicking him</h1>
+
+<img id="imgDance" onClick="changeImage()" src="img/rock_01.jpg" height="496px" width="319px">
+
+<script type="text/javascript">
+function changeImage(){
+	var image = document.getElementById('imgDance');
+	if (image.src.match("rock_01")) {
+			image.src = "img/rock_02.jpg";
+		} else {
+			image.src = "img/rock_01.jpg"
+		}	
+	}		
+</script>
+
+</body>
+</html>
