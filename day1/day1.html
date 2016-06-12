@@ -10,11 +10,17 @@
 <img id="imgDance" onClick="changeImage()" src="img/rock_01.jpg" height="496px" width="319px">
 
 <script type="text/javascript">
+//i have declared the function "changeImage"
 function changeImage(){
+	//I've set an image as the variable, and attached it to the id#="imgDance" in my html
 	var image = document.getElementById('imgDance');
+	//I've created a block statement that if the button is clicked and rock_01.jog is showing
 	if (image.src.match("rock_01")) {
+			//then show rock_02.jpg
 			image.src = "img/rock_02.jpg";
+		//but if I click the button and something other then rock_01.jpg is showing
 		} else {
+			// then show rock_01.jpg
 			image.src = "img/rock_01.jpg"
 		}	
 	}		
